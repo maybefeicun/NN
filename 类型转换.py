@@ -14,3 +14,10 @@ a = np.random.normal(size=10)
 print(a)
 a = tf.cast(a, tf.float32)
 print(sess.run(a))
+
+
+a = np.random.normal(size=[5, 5])
+b = np.random.normal(size=[5, 5])
+c = [a, b]
+c = np.reshape(c, [2, 5, 5])
+pass
